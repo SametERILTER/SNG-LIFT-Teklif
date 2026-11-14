@@ -32,6 +32,13 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+.env*
+
+# private sensitive configurations (company details, IBANs, etc.)
+*.private.js
+*private*
+src/config/companyConfig.js
 
 # typescript
 *.tsbuildinfo
