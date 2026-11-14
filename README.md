@@ -1,4 +1,8 @@
-# SNG LIFT Teklif Oluşturma Uygulaması
+<p align="center">
+  <img src="./assets/sng_logo.png" alt="SNG LIFT Logo" width="220" />
+</p>
+
+<h1 align="center">SNG LIFT Teklif Oluşturma Uygulaması</h1>
 
 SNG LIFT Teklif Oluşturma Uygulaması; asansör, makine ve endüstriyel taahhüt sektöründe faaliyet gösteren saha satış ekipleri, mühendisler ve yöneticiler için geliştirilmiş kurumsal bir mobil teklif, maliyet analizi ve dokümantasyon platformudur.
 
