@@ -25,112 +25,98 @@ Bu uygulama, tüm bu iş akışını tek bir yerel mobil uygulamada toplayarak u
 
 ## Uygulama İçi Ekran Görüntüleri
 
-### 1. Ana Kontrol Paneli ve Canlı Kurlar
-Saha satış temsilcisinin güncel döviz kurlarını anlık takip ettiği, son hazırlanan teklif özetlerine ulaştığı ve hızlı teklif oluşturma sürecini başlattığı ana operasyon ekranı.
+### Ana Kontrol Paneli ve Canlı Kurlar
+Saha satış temsilcisinin anlık döviz kurlarını takip ettiği, son hazırlanan teklif özetlerine ulaştığı ve hızlı teklif oluşturma sürecini başlattığı ana operasyon ekranı.
 
 <p align="center">
-  <img src="./screenshots/ss1.jpeg" alt="Ana Kontrol Paneli ve Canlı Kurlar" width="480" />
+  <img src="./screenshots/ss1.jpeg" alt="Ana Kontrol Paneli ve Canlı Kurlar" width="340" />
 </p>
 
----
+### Modül ve Fonksiyon Ekranları
 
-### 2. Yeni Teklif Hazırlama ve Form Yönetimi
-Müşteri firma unvanı, yetkili kişi, referans, teklif tarihi ve sıralı teklif numarasının yönetildiği; para birimi (USD, TL, EUR) seçimi ile dinamik malzeme kalemlerinin eklendiği teklif oluşturma arayüzü.
-
-<p align="center">
-  <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="480" />
-</p>
-
----
-
-### 3. Kurumsal Teklif ve Vektörel PDF Önizleme Modalı
-Oluşturulan teklifin kaydedilmeden veya müşteriye iletilmeden önce resmi kurumsal şablonda, şirket logosu ve teknik parametreleriyle birlikte canlı olarak kontrol edildiği interaktif önizleme ekranı.
-
-<p align="center">
-  <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme Modalı" width="480" />
-</p>
-
----
-
-### 4. Satış İstatistikleri ve Ciro Analiz Paneli
-Bugün, bu hafta, bu ay ve tüm zamanlar bazında toplam teklif hacmi, onaylanan teklif tutarları, motor/ekipman adetleri ve en çok teklif verilen kurumsal müşterilerin anlık analiz edildiği raporlama paneli.
-
-<p align="center">
-  <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="480" />
-</p>
-
----
-
-### 5. Canlı Finans ve Ekonomi Bülteni
-Satış ekiplerinin küresel ve yerel piyasa dinamiklerini, döviz hareketlerini ve sektörel haber akışlarını doğrudan uygulama içinden takip etmesini sağlayan entegre ekonomi bülteni.
-
-<p align="center">
-  <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="480" />
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>Yeni Teklif Hazırlama ve Form Yönetimi</b><br />
+      <sub>Müşteri unvanı, çoklu para birimi (USD, TL, EUR) ve sıralı teklif numarası yönetimi</sub><br /><br />
+      <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="270" />
+    </td>
+    <td align="center" width="50%">
+      <b>Kurumsal Teklif ve PDF Önizleme Modalı</b><br />
+      <sub>Şirket logolu kurumsal şablonda kayıt öncesi interaktif canlı önizleme</sub><br /><br />
+      <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme" width="270" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>Satış İstatistikleri ve Ciro Analiz Paneli</b><br />
+      <sub>Dönemsel teklif hacmi, onaylanan ciro toplamları ve müşteri bazlı analitik</sub><br /><br />
+      <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="270" />
+    </td>
+    <td align="center" width="50%">
+      <b>Canlı Finans ve Ekonomi Bülteni</b><br />
+      <sub>Anlık döviz kurları ve RSS tabanlı güncel sektörel haber akışı</sub><br /><br />
+      <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="270" />
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Modüler Mimari ve Ekran Detayları
 
-### 1. Karşılama ve Onboarding (WelcomeScreen)
-Uygulama ilk kez çalıştırıldığında kullanıcıyı karşılayan, asenkron yerel durum kontrolüyle ilk kurulum adımlarını yöneten ve kurumsal kimlik animasyonlarıyla açılışı gerçekleştiren karşılama modülüdür.
+### 1. Karşılama ve Tanıtım
+Uygulama ilk kez çalıştırıldığında kullanıcıyı karşılayan, yerel durum kontrolüyle ilk kurulum adımlarını yöneten ve kurumsal kimlik arayüzüyle açılışı gerçekleştiren karşılama modülüdür.
 
-### 2. Ana Kontrol Paneli (HomeScreen)
+### 2. Ana Kontrol Paneli
 Kullanıcının tek dokunuşla yeni teklif oluşturabildiği, son hazırlanan tekliflerin özet kartlarını inceleyebildiği, anlık döviz kurlarını takip edebildiği ve uygulama modülleri arasında hızlı geçiş yapabildiği merkezi operasyon paneli.
 
-### 3. Teklif Oluşturma ve Düzenleme Motoru (CreateProposalScreen)
+### 3. Teklif Oluşturma ve Düzenleme Motoru
 Teklif oluşturma sürecinin ana omurgasıdır.
-* Dinamik Form Yönetimi: Müşteri unvanı, yetkili kişi, iletişim bilgileri, teslimat süresi ve ödeme koşullarının validasyonlu girişi.
+* Dinamik Form Yönetimi: Müşteri unvanı, yetkili kişi, iletişim bilgileri, teslimat süresi ve ödeme koşullarının eksiksiz girişi.
 * Sıralı Otomatik Teklif Numaralandırma: Yerel depolama üzerinden geçmiş teklifler taranarak teklif numaralarının ardışık olarak otomatik artırılması.
-* Çoklu Para Birimi: USD, EUR ve TRY para birimleri arasında anlık geçiş ve kur çarpanlarıyla toplam maliyet güncellemesi.
-* Canlı Düzenleme ve Önizleme: Teklifin son halini kaydetmeden önce doğrudan WebView üzerinde interaktif olarak görüntüleme ve alan bazlı son dakika revizyonları yapabilme.
+* Çoklu Para Birimi: USD, EUR ve TRY para birimleri arasında anlık geçiş ve kur katsayılarıyla toplam maliyet güncellemesi.
+* Canlı Düzenleme ve Önizleme: Teklifin son halini kaydetmeden önce doğrudan arayüz üzerinde interaktif olarak görüntüleme ve alan bazlı son dakika revizyonları yapabilme.
 
-### 4. Motor ve Malzeme Hesaplayıcı Modalı (ProposalCalculatorModal)
+### 4. Motor ve Malzeme Hesaplayıcı Modülü
 Asansör motorları ve yardımcı teknik ekipmanlar için özel olarak kurgulanmış parametrik maliyet motorudur.
 * Model bazlı katalog seçimi (FRD serisi motorlar ve teknik varyantlar).
 * Liste fiyatı, bayi iskontosu, kâr marjı ve ilave maliyet kalemlerinin girilmesiyle satır bazlı net tutar hesaplama.
 * Hesaplanan verilerin ana teklif tablosuna tek tıkla yeni malzeme kalemi olarak aktarılması.
 
-### 5. Kurumsal PDF Üretim ve Paylaşım Hattı (pdfGenerator & Expo Print)
-* Cihaz donanımını doğrudan kullanarak HTML5, CSS tabanlı özel bir kurumsal teklif şablonunu vektörel PDF belgesine dönüştürür.
-* Teklif belgesinde şirket logosu, müşteri ve satıcı detayları, en az 8 satırlık kurumsal malzeme tablosu, dip toplamlar, banka hesap ve IBAN bilgileri ile resmi imza/onay kutucukları eksiksiz yer alır.
-* Üretilen PDF belgesi Expo Sharing ve FileSystem köprüsü sayesinde herhangi bir sunucu bağımlılığı olmaksızın WhatsApp, E-posta veya cihazın yerel dosya yöneticisiyle anında paylaşılabilir.
+### 5. Kurumsal PDF Üretim ve Paylaşım Altyapısı
+* Özel kurumsal teklif şablonunu doğrudan cihaz üzerinde vektörel PDF belgesine dönüştürür.
+* Teklif belgesinde şirket logosu, müşteri ve satıcı detayları, kurumsal malzeme tablosu, dip toplamlar, banka hesap ve IBAN bilgileri ile resmi imza/onay alanları eksiksiz yer alır.
+* Üretilen PDF belgesi herhangi bir harici sunucuya ihtiyaç duymadan WhatsApp, E-posta veya cihazın yerel dosya yöneticisiyle anında paylaşılabilir.
 
-### 6. Teklif Arşivi ve Durum Takibi (AllProposalsScreen)
+### 6. Teklif Arşivi ve Durum Takibi
 * Geçmişte oluşturulan tüm tekliflerin listelendiği, müşteri adı veya teklif numarasına göre anlık arama yapılabilen arşiv ekranı.
-* Teklif durumlarının (Beklemede, Onaylandı, Revize Edildi) renk kodlu badge sistemiyle izlenmesi.
+* Teklif durumlarının (Beklemede, Onaylandı, Revize Edildi) renk kodlu etiket sistemiyle izlenmesi.
 * Var olan bir teklifi şablon olarak kullanarak tek tıkla kopyalama ve yeni bir teklife dönüştürme yeteneği.
 
-### 7. Canlı Döviz ve Piyasa Servisi (currencyService)
-* Küresel finans API uç noktaları üzerinden USD/TRY ve EUR/TRY kurlarını canlı olarak çeker.
-* Sayfa açılışlarında kullanıcıyı bekletmemek adına AsyncStorage üzerinde önbellekleme (cache-first) stratejisi uygular; ağdan yeni veri geldiğinde arayüzü sessizce günceller.
-* Zaman aşımı (AbortController) ve bağlantı kopmalarına karşı varsayılan kur değerleriyle kesintisiz çalışma garantisi sunar.
+### 7. Canlı Döviz ve Piyasa Servisi
+* Küresel finans uç noktaları üzerinden USD/TRY ve EUR/TRY kurlarını canlı olarak çeker.
+* Sayfa açılışlarında bekleme yaşanmaması adına yerel hafıza üzerinde önbellekleme stratejisi uygular; ağdan yeni veri geldiğinde arayüzü sessizce günceller.
+* Zaman aşımı ve olası bağlantı kopmalarına karşı varsayılan kur değerleriyle kesintisiz çalışma garantisi sunar.
 
-### 8. Ekonomi Haberleri ve Sektörel Bülten (EconomyNewsScreen & newsService)
-* Türkiye ve dünya ekonomisine dair finansal haber akışlarını doğrudan RSS kaynaklarından çeken ve ayrıştıran modül.
-* HTML entity temizleme, görsel URL ayrıştırma, bağıl zaman hesaplama ("3 saat önce") ve haber detaylarını okuma modu.
+### 8. Ekonomi Haberleri ve Sektörel Bülten
+* Türkiye ve dünya ekonomisine dair finansal haber akışlarını doğrudan haber kaynaklarından çeken ve ayrıştıran modül.
+* Metin temizleme, görsel bağlantılarını ayrıştırma, zaman hesaplama ve haber detaylarını okuma modu.
 
-### 9. İstatistik ve Satış Analitiği (StatisticsScreen)
+### 9. İstatistik ve Satış Analitiği
 * Yerel teklif veritabanı üzerinden toplam teklif adedi, onaylanan teklif hacmi, para birimlerine göre toplam ciro dağılımı ve başarı oranı metriklerini anlık hesaplayan analitik ekranı.
 
-### 10. Kurumsal Yapılandırma ve Sistem Ayarları (SettingsScreen)
+### 10. Kurumsal Yapılandırma ve Sistem Ayarları
 * Satıcı firma adı, sabit telefon, GSM, e-posta, ticari unvan ve farklı bankalara ait TL/USD IBAN bilgilerinin dinamik olarak tanımlandığı yönetim paneli.
 
 ---
 
-## Teknik Yaklaşımlar ve Mühendislik Prensipleri
+## Güvenlik ve Veri İzolasyonu
 
-### 60 FPS GPU Hızlandırmalı Animasyonlar
-Kullanıcı arayüzünde React Native Reanimated kütüphanesi aktif olarak kullanılmıştır. Dinamik header küçülmeleri, başlık geçişleri ve liste yüklemeleri JavaScript iş parçacığını (thread) bloklamadan, doğrudan GPU seviyesinde transform ve opacity interpolasyonları ile çalıştırılır.
-
-### Çevrimdışı Öncelikli Mimari (Offline-First)
-Saha personelinin şantiye veya fabrika gibi internet erişiminin kısıtlı olduğu ortamlarda çalışabilmesi hedeflenmiştir. Uygulama; teklif oluşturma, PDF üretme, arşivleme ve geçmiş kayıtlara erişim fonksiyonlarını hiçbir harici sunucuya veya internet bağlantısına ihtiyaç duymadan tamamen yerel depolama (AsyncStorage) üzerinde çalıştırabilir.
-
-### Güvenlik ve Hassas Veri İzolasyonu
-Kurumsal projelerde karşılaşılan en büyük risklerden biri olan finansal verilerin (şirket IBAN'ları, özel iletişim numaraları) kaynak koda gömülü kalması ve açık depolara sızması problemi katmanlı bir yapılandırma mimarisiyle çözülmüştür:
-* Gerçek banka ve şirket verileri versiyon kontrol sistemi (.gitignore) kapsamındaki yerel dosyalarda saklanır.
-* Proje içinde genel bir şablon yapılandırması (companyConfig.example.js) yer alır.
-* Dinamik yükleyici köprü (config/index.js), yerel özel dosya mevcutsa onu devreye alır, bulunmadığı durumlarda ise hataya düşmeden genel şablon değerleriyle çalışmayı sürdürür.
+Kurumsal projelerde karşılaşılan finansal ve kişisel verilerin (şirket unvanı, banka IBAN bilgileri, telefon numaraları) açık kaynak depolara sızmasını önlemek adına katmanlı bir yapılandırma mimarisi uygulanmıştır:
+* Gerçek banka ve şirket verileri versiyon kontrol sistemi (.gitignore) kapsamındaki yerel dosyalarda tutulur.
+* Depo üzerinde sadece örnek bir şablon yapılandırması (companyConfig.example.js) yer alır.
+* Dinamik yapılandırma köprüsü, yerel özel dosya mevcut olduğunda gerçek verileri devreye alır; dosyanın bulunmadığı ortamlarda ise genel şablon değerleriyle güvenle çalışmayı sürdürür.
 
 ---
 
