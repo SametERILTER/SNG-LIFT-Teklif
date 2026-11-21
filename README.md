@@ -23,6 +23,53 @@ Bu uygulama, tüm bu iş akışını tek bir yerel mobil uygulamada toplayarak u
 
 ---
 
+## Uygulama İçi Ekran Görüntüleri
+
+### 1. Ana Kontrol Paneli ve Canlı Kurlar
+Saha satış temsilcisinin güncel döviz kurlarını anlık takip ettiği, son hazırlanan teklif özetlerine ulaştığı ve hızlı teklif oluşturma sürecini başlattığı ana operasyon ekranı.
+
+<p align="center">
+  <img src="./screenshots/ss1.jpeg" alt="Ana Kontrol Paneli ve Canlı Kurlar" width="480" />
+</p>
+
+---
+
+### 2. Yeni Teklif Hazırlama ve Form Yönetimi
+Müşteri firma unvanı, yetkili kişi, referans, teklif tarihi ve sıralı teklif numarasının yönetildiği; para birimi (USD, TL, EUR) seçimi ile dinamik malzeme kalemlerinin eklendiği teklif oluşturma arayüzü.
+
+<p align="center">
+  <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="480" />
+</p>
+
+---
+
+### 3. Kurumsal Teklif ve Vektörel PDF Önizleme Modalı
+Oluşturulan teklifin kaydedilmeden veya müşteriye iletilmeden önce resmi kurumsal şablonda, şirket logosu ve teknik parametreleriyle birlikte canlı olarak kontrol edildiği interaktif önizleme ekranı.
+
+<p align="center">
+  <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme Modalı" width="480" />
+</p>
+
+---
+
+### 4. Satış İstatistikleri ve Ciro Analiz Paneli
+Bugün, bu hafta, bu ay ve tüm zamanlar bazında toplam teklif hacmi, onaylanan teklif tutarları, motor/ekipman adetleri ve en çok teklif verilen kurumsal müşterilerin anlık analiz edildiği raporlama paneli.
+
+<p align="center">
+  <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="480" />
+</p>
+
+---
+
+### 5. Canlı Finans ve Ekonomi Bülteni
+Satış ekiplerinin küresel ve yerel piyasa dinamiklerini, döviz hareketlerini ve sektörel haber akışlarını doğrudan uygulama içinden takip etmesini sağlayan entegre ekonomi bülteni.
+
+<p align="center">
+  <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="480" />
+</p>
+
+---
+
 ## Modüler Mimari ve Ekran Detayları
 
 ### 1. Karşılama ve Onboarding (WelcomeScreen)
