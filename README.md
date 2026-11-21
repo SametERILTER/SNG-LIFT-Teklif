@@ -35,25 +35,23 @@ Saha satış temsilcisinin anlık döviz kurlarını takip ettiği, son hazırla
 ### Modül ve Fonksiyon Ekranları
 
 <p align="center">
-  <span style="display: inline-block; margin: 12px; text-align: center;">
-    <b>Yeni Teklif Hazırlama ve Form Yönetimi</b><br /><br />
-    <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="320" />
-  </span>
-  <span style="display: inline-block; margin: 12px; text-align: center;">
-    <b>Kurumsal Teklif ve PDF Önizleme Modalı</b><br /><br />
-    <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme" width="320" />
-  </span>
+  <b>Yeni Teklif Hazırlama ve Form Yönetimi</b> &nbsp;&nbsp;|&nbsp;&nbsp; <b>Kurumsal Teklif ve PDF Önizleme Modalı</b>
+</p>
+<p align="center">
+  <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="44%" />
+  &nbsp;&nbsp;
+  <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme" width="44%" />
 </p>
 
+<br />
+
 <p align="center">
-  <span style="display: inline-block; margin: 12px; text-align: center;">
-    <b>Satış İstatistikleri ve Ciro Analiz Paneli</b><br /><br />
-    <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="320" />
-  </span>
-  <span style="display: inline-block; margin: 12px; text-align: center;">
-    <b>Canlı Finans ve Ekonomi Bülteni</b><br /><br />
-    <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="320" />
-  </span>
+  <b>Satış İstatistikleri ve Ciro Analiz Paneli</b> &nbsp;&nbsp;|&nbsp;&nbsp; <b>Canlı Finans ve Ekonomi Bülteni</b>
+</p>
+<p align="center">
+  <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="44%" />
+  &nbsp;&nbsp;
+  <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="44%" />
 </p>
 
 * **Yeni Teklif Hazırlama:** Müşteri unvanı, yetkili kişi, referans, çoklu para birimi (USD, TL, EUR) ve sıralı teklif numarası yönetimi.
