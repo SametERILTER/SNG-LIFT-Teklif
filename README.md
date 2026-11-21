@@ -34,32 +34,17 @@ Saha satış temsilcisinin anlık döviz kurlarını takip ettiği, son hazırla
 
 ### Modül ve Fonksiyon Ekranları
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <b>Yeni Teklif Hazırlama ve Form Yönetimi</b><br />
-      <sub>Müşteri unvanı, çoklu para birimi (USD, TL, EUR) ve sıralı teklif numarası yönetimi</sub><br /><br />
-      <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="270" />
-    </td>
-    <td align="center" width="50%">
-      <b>Kurumsal Teklif ve PDF Önizleme Modalı</b><br />
-      <sub>Şirket logolu kurumsal şablonda kayıt öncesi interaktif canlı önizleme</sub><br /><br />
-      <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme" width="270" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <b>Satış İstatistikleri ve Ciro Analiz Paneli</b><br />
-      <sub>Dönemsel teklif hacmi, onaylanan ciro toplamları ve müşteri bazlı analitik</sub><br /><br />
-      <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="270" />
-    </td>
-    <td align="center" width="50%">
-      <b>Canlı Finans ve Ekonomi Bülteni</b><br />
-      <sub>Anlık döviz kurları ve RSS tabanlı güncel sektörel haber akışı</sub><br /><br />
-      <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="270" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./screenshots/ss2.jpeg" alt="Yeni Teklif Hazırlama ve Form Yönetimi" width="220" />
+  <img src="./screenshots/ss3.jpeg" alt="Kurumsal Teklif ve Vektörel PDF Önizleme" width="220" />
+  <img src="./screenshots/ss4.jpeg" alt="Satış İstatistikleri ve Ciro Analiz Paneli" width="220" />
+  <img src="./screenshots/ss5.jpeg" alt="Canlı Finans ve Ekonomi Bülteni" width="220" />
+</p>
+
+* **Yeni Teklif Hazırlama:** Müşteri unvanı, yetkili kişi, referans, çoklu para birimi (USD, TL, EUR) ve sıralı teklif numarası yönetimi.
+* **Kurumsal PDF Önizleme:** Şirket logolu resmi teklif şablonunun kayıt ve paylaşım öncesi canlı önizleme modalı.
+* **Satış İstatistikleri:** Dönemsel teklif adedi, onaylanan ciro toplamları ve müşteri bazlı satış analitiği paneli.
+* **Ekonomi Bülteni:** Canlı döviz kurları ve güncel piyasa haberlerinin doğrudan takip edildiği finans bülteni.
 
 ---
 
